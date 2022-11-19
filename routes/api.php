@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,8 +42,6 @@ Route::group([
     Route::post('/auth/v1/orders', 'Api\OrderApiController@store'); //Pedido com autenticação
 
     Route::post('auth/v1/orders/{identifyOrder}/evaluations', 'Api\EvaluationApiController@store');
-
-
 });
 
 
@@ -73,6 +72,8 @@ Route::prefix('v1')
 
         Route::post('/orders', 'OrderApiController@store');//Cria um novo pedido
         Route::get('/orders/{identify}', 'OrderApiController@show'); //Recupera um pedido pelo identificador
+
+
 
 
 });
