@@ -18,7 +18,7 @@ class CreateTablesTable extends Migration
             $table->unsignedBigInteger('tenant_id');
 
             $table->uuid('uuid');
-            $table->string('identify')->unique();
+            $table->string('identify');//->unique(); a responsabilidade de validação de campo unico pelo tenant_id é feita
             $table->text('description')->nullable();
             $table->timestamps();
 

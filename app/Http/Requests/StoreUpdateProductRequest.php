@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Tenant\Rules\UniqueTenant;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreUpdateProductRequest extends FormRequest
@@ -26,7 +27,19 @@ class StoreUpdateProductRequest extends FormRequest
         $id = $this->segment(3); //Pega o id no segmento da URL
 
         $rules = [
-            'name' => ['required', 'min:3','max:255', "unique:products,name,{$id},id"],
+            //'name' => ['required', 'min:3','max:255', "unique:products,name,{$id},id"],
+            'name' => [
+                'required',
+                'min:3',
+                'max:255',
+                //"unique:products,name,{$id},id"
+                new UniqueTenant('products', $id),
+
+            ],
+
+
+
+
             'description' => ['required', 'min:3', 'max:500'],
             'image' => ['required','image'],
             'price' => "required|regex:/^\d+(\.\d{1,2})?$/",

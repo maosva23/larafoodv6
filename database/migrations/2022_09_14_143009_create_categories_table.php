@@ -18,8 +18,8 @@ class CreateCategoriesTable extends Migration
             $table->unsignedBigInteger('tenant_id');
 
             $table->uuid('uuid');
-            $table->string('name')->unique();
-            $table->string('url');
+            $table->string('name');//->unique(); a responsabilidade de validação de campo unico pelo tenant_id é feita
+            $table->string('url');//->unique(); a responsabilidade de validação de campo unico pelo tenant_id é feita de forma personalizada
             $table->string('description');
 
             $table->timestamps();

@@ -47,7 +47,7 @@
                             <td>{{ $table->identify }}</td>
                             <td>{{ $table->description }}</td>
                             <td>
-                                <a href="{{ route('tables.', $table->identify) }}" class="btn btn-default" title="QRCode" target="_blank">
+                                <a href="{{ route('tables.qrcode', $table->identify) }}" class="btn btn-default" title="QRCode" target="_blank">
                                     <i class="fas fa-qrcode"></i>
                                     {{-- VER --}}
                                 </a>
