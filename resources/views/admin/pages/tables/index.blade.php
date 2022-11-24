@@ -47,12 +47,10 @@
                             <td>{{ $table->identify }}</td>
                             <td>{{ $table->description }}</td>
                             <td>
-                                <a href="{{route('tables.qrcode', $table->identify)}}" class="btn btn-default" title="QRCode" target="_blank">
+                                <a href="{{ route('tables.', $table->identify) }}" class="btn btn-default" title="QRCode" target="_blank">
                                     <i class="fas fa-qrcode"></i>
-{{--                                     VER--}}
+                                    {{-- VER --}}
                                 </a>
-
-
 
                                 <a href="{{ route('tables.show', $table->id) }}" class="btn btn-warning" title="Ver">
                                     <i class="fas fa-info-circle"></i>
