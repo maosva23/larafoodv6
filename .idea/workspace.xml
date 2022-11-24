@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1c8aa4a-102b-40f7-a41f-0e52ddf05d0e" name="Default Changelist" comment="Generate QrCode">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/projectoBaseV6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/projectoBaseV6.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -11,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pages/tables/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/pages/tables/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Feature/TenantTest.php" beforeDir="false" />
     </list>
@@ -244,7 +242,7 @@
       <workItem from="1668789091115" duration="107000" />
       <workItem from="1668842537829" duration="2709000" />
       <workItem from="1669109911244" duration="9341000" />
-      <workItem from="1669271824015" duration="2615000" />
+      <workItem from="1669271824015" duration="3314000" />
     </task>
     <servers />
   </component>
