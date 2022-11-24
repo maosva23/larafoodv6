@@ -18,8 +18,8 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('tenant_id');
 
             $table->uuid('uuid');
-            $table->string('name')->unique();
-            $table->string('flag')->unique();
+            $table->string('name');//->unique(); a responsabilidade de validação de campo unico pelo tenant_id é feita
+            $table->string('flag');//->unique(); a responsabilidade de validação de campo unico pelo tenant_id é feita
             $table->string('image');
             $table->double('price', 10, 2);
             $table->text('description');
