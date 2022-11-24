@@ -23,7 +23,7 @@ class TenantTest extends TestCase
         $response = $this->getJson('/api/v1/tenants');
         //$response->dump();
 
-        $response->assertStatus(200);
+        $response->assertStatus(200)
                     ->assertJsonCount(10,'data');
     }
 
